@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <script src="{% static 'homepage.js' %}"></script>
+    <head>
+        <link rel="stylesheet" href="{% static 'homepage.css' %}">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyWebSite</title>
+    </head>
+    <body>
+        <main>
+            <section id="first_section">
+                <h1 class="Header" onclick="myFunction()">DataBase</h1>
+                <div class="img_center">
+                    <img src="{% static 'profile.png' %}" alt="profile picture" width="50" height="50">
+                </div>
+                {% for i in users%}
+                <h3 class="users">{{ i.firstname }} {{ i.lastname }} | <a href="/delete/{{ i.id }}">delete</a> | <a href="/update/{{ i.id }}">update</a></h3> 
+                {% endfor %}
+                    
+                <a id="adduser" href="/add">add user</a>
+            </section>
+    
+        </main>
+    </body>
+</html>

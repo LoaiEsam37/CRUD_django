@@ -1,0 +1,40 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+.Header {
+    color: rgb(43, 10, 210);
+    text-align: center;
+}
+
+.users {
+    padding-left: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-size: 100px;
+    border-style: ridge ;
+    border-color: rgb(43, 10, 210);
+    padding: 4px;
+}
+
+#adduser {
+    margin-top: 2px;
+    position: absolute;
+}
+
+#first_section {
+    background-color: blanchedalmond;
+    padding-top: 4px;
+    padding-bottom: 10%;
+}
+
+.img_center {
+    text-align: center;
+}
